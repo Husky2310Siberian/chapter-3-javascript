@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    height: 120px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.container-fluid {
+    background-color: brown;
+}
+
+.container {    /*with float, aside and main, exit from normal float and he lost the children */
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: 1px solid black;
+    overflow: hidden; /*container adpats again height and his chidren */
+}
+
+.aside {
+    height: 200px;
+    width: 450px;
+    border: 1px solid black;
+    background-color: rgb(227, 117, 39);
+    float:left;
+}
+
+.main{
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: azure;
+    float: right; /
+}
+
+.footer{
+    min-height: 250px; /*the lowest height is 150px*/ 
+    /* height: 150px; */
+    border: 1px solid black;
+    background-color: blue;
+    overflow: hidden; /*ALL items get int FOOTER, childres to father*/
+}
+
+.footer-item{
+    width: 30%; /*each footer-item has 30% from his father*/
+    height: 100px;
+    background-color: beige;
+    border: 1px solid black;
+    float:left;/*the three items get inside footer*/
+    margin: 10px 1.5%; 
+    /* clear: both;  does not work here*/
+    /* overflow: hidden;  */
+}

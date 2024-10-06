@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header {
+    background-color: #762124;
+    overflow: hidden;
+}
+
+.logo > img {
+    height: 100px;
+    width: auto;
+}
+
+.logo {
+    float:left;
+}
+
+.nav {
+    float:left;
+    width: 500px;
+}
+
+.nav > ul {
+    height: 100px; /* the same with img*/
+    list-style: none; /*no bullets*/
+    display: flex; /*the one besides the other*/
+    /* background-color: aqua; */
+    justify-content: space-around;/*horizontal στοίχιση*/
+    align-items: center; /*στοίχιση στο κέντρο*/
+}
+
+.nav a {
+    color :azure;
+    text-decoration: none;
+    font-size: 1.2 rem;
+    padding: 15px 10px;
+    
+}
+
+.nav a:hover {
+    background-color: rgb(22,152,109);
+}
+
+.nav a:active{
+    background-color: rgb(172,172,231);
+}
+
+.home-img{
+    background-color: aqua;
+    background-image: url('../img/tep-aueb.jpg');
+    height: 400px;
+    width: 100%;
+    background-repeat:no-repeat; /*appears the image one time*/
+    background-size: cover; /*attached in all the web page*/
+    background-position: center;
+    opacity: 0.5;
+    display: flex; /*the words put in center*/
+    justify-content: center; /*the words put in center*/
+    align-items: center; /*the words put in center*/
+}
+
+.home-title {
+    width: 50%;
+    color:#762124;
+    font-size: 40px;
+    font-weight: 600;
+    /* opacity: 1; */
+
+}
+
+.gap-bottom{
+    margin-bottom: 25px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.footer{
+    display:flex;
+    height: 120px;
+    background-color: #762124;
+    justify-content:space-around; /*seperates the two contents*/
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+}

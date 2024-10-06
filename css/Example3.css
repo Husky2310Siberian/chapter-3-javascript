@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.main{
+    height: 300px;
+    width: 400px;
+    border: 1p solid black;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;  /*creates gap between main an anything inside main*/
+}
+
+ .main > img {
+    height: auto;
+    width: 100px;
+    border: 1px solid red;
+    float:left;
+    margin-right: 20px; /*creates gap between border and the content out of this*/
+    margin-bottom: 20px;
+    /* padding: 10px; increase distance of image to border */
+}
+
+.main > p {
+    margin-bottom: 10px;
+    
+}
